@@ -5,6 +5,7 @@ import {
   DownloadIcon,
 } from '@heroicons/react/outline';
 import Icon from '../components/Icon';
+import Carousel from '../components/Carousel';
 
 const Home = () => {
   return (
@@ -15,13 +16,14 @@ const Home = () => {
         alt='Headstart Media Factory Logo'
       />
       <nav className='px-12 flex justify-between items-center'>
-        <h2 className='font-semibold text-2xl text-white '>Hi, Ashish!</h2>
+        <h2 className='font-bold text-2xl text-white '>Hi, Ashish!</h2>
         <div className='flex gap-x-4'>
           <Icon IconName={ChatAltIcon} />
           <Icon IconName={PhoneOutgoingIcon} />
           <Icon IconName={DownloadIcon} />
         </div>
       </nav>
+      <Carousel />
     </div>
   );
 };
